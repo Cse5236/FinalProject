@@ -80,34 +80,34 @@
         tools:layout_editor_absoluteY="261dp" />
 
     <Button
-        android:id="@+id/button_fb"
+        android:id="@+id/button_lucky"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Button_Login"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="Login with Facebook"
+        android:text="I'm feeling lucky."
         tools:layout_editor_absoluteX="104dp"
         tools:layout_editor_absoluteY="407dp" />
-
 
     <TextView
         android:id="@+id/txtStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/Button_Login"
-        android:layout_alignRight="@+id/Button_Login"
+        android:layout_alignEnd="@+id/button_lucky"
+        android:layout_alignRight="@+id/button_lucky"
         android:layout_below="@+id/login_fb_button"
+        android:layout_marginTop="0dp"
         android:text="Above is facebook Login." />
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_fb_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button_fb"
-        android:layout_alignRight="@+id/button_fb"
-        android:layout_below="@+id/button_fb"
+        android:layout_alignEnd="@+id/button_lucky"
+        android:layout_alignRight="@+id/button_lucky"
+        android:layout_below="@+id/button_lucky"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="20dp" />
 
 </RelativeLayout>
