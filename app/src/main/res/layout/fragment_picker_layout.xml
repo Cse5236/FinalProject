@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/buttonD"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignLeft="@+id/buttonS"
+        android:layout_alignStart="@+id/buttonS"
+        android:layout_below="@+id/buttonS"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:baselineAligned="false"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/d" />
+
+    <ImageButton
+        android:id="@+id/buttonS"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:baselineAligned="false"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/s" />
+
+    <Button
+        android:id="@+id/Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonD"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Confirm" />
+    />
+</RelativeLayout>
