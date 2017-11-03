@@ -1,7 +1,6 @@
 package com.example.whath.ui.accelerometer;
 
-import android.content.Context;
-import android.content.SharedPreferences;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -9,32 +8,15 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
-
 
 import com.example.whath.ui.Domsub;
-import com.example.whath.ui.MainActivity;
 import com.example.whath.ui.R;
-import com.example.whath.ui.api.CassandraRestApi;
-import com.example.whath.ui.api.CassandraRestApiClient;
 import com.example.whath.ui.model.Acceleration;
-
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.*;
-import android.util.Log;
 
 import java.util.Date;
 
 //import duchess.fr.basicaccelerometer.R;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 /**
  * Created by whath on 2017/10/21.
  */
@@ -112,8 +94,8 @@ public class bump extends AppCompatActivity implements SensorEventListener{
                 * deltaZ)/ timeInterval * 10000;
         //Log.v("thelog", "===========log===================");
         TextView tvX= (TextView)findViewById(R.id.x);
-        tvX.setText(Double.toString(x));
-        if ((x>=6) | (x<=-6))
+        tvX.setText(Double.toString(x*x+y*y+z*z));
+        if ( Math.sqrt(x*x+y*y+z*z)>=12 )
         {
             Intent intent = new Intent(bump.this,Domsub.class);
             startActivity(intent);
