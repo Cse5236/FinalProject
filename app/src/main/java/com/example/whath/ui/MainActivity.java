@@ -111,11 +111,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
     });
-        Button buttonfb= (Button) findViewById(R.id.button_fb);
+        Button buttonfb= (Button) findViewById(R.id.button_lucky);
         buttonfb.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Toast.makeText(MainActivity.this, "Connect to Facebook", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "I'm not", Toast.LENGTH_SHORT).show();
             }
         }
 
