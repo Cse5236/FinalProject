@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "363409746775",
+    "firebase_url": "https://bump2share.firebaseio.com",
+    "project_id": "bump2share",
+    "storage_bucket": "bump2share.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363409746775:android:39f6dda3872c925a",
+        "android_client_info": {
+          "package_name": "com.example.whath.ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363409746775-nq0ekl5o5d6rrqb98kro3hfn16boi9ji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whath.ui",
+            "certificate_hash": "eb01f593439a30560d3d0b8bba063184c2c74448"
+          }
+        },
+        {
+          "client_id": "363409746775-hba2u6alhbvn1d2c0jujfad3mpjnrl7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW8zIDD5dg4NiYq_pSFncBu8IgxuNbcrQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363409746775-hba2u6alhbvn1d2c0jujfad3mpjnrl7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
