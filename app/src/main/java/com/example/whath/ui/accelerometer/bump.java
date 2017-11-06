@@ -13,7 +13,6 @@ import android.widget.TextView;
 import com.example.whath.ui.Domsub;
 import com.example.whath.ui.R;
 import com.example.whath.ui.model.Acceleration;
-import com.example.whath.ui.videoplayer.Html5VideoAutoPlay;
 import com.example.whath.ui.videoplayer.WebVideoActivity;
 import com.example.whath.ui.videoplayer.video_browser;
 
