@@ -28,7 +28,7 @@ public class WebVideoActivity extends Activity {
     private WebView webView;
 
     /** 视频全屏参数 */
-    protected static final FrameLayout.LayoutParams COVER_SCREEN_PARAMS = new FrameLayout.LayoutParams(2000, ViewGroup.LayoutParams.MATCH_PARENT);
+    protected static final FrameLayout.LayoutParams COVER_SCREEN_PARAMS = new FrameLayout.LayoutParams(2200, ViewGroup.LayoutParams.MATCH_PARENT);
     private View customView;
     private FrameLayout fullscreenContainer;
     private WebChromeClient.CustomViewCallback customViewCallback;
@@ -115,7 +115,7 @@ public class WebVideoActivity extends Activity {
         });
 
         // 加载Web地址
-        webView.loadUrl("https://www.youtube.com");
+        webView.loadUrl("https://youtu.be/W48v6hF6qZg");
     }
 
     /** 视频播放全屏 **/
