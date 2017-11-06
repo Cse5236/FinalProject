@@ -28,7 +28,7 @@ public class WebVideoActivity extends Activity {
     private WebView webView;
 
     /** 视频全屏参数 */
-    protected static final FrameLayout.LayoutParams COVER_SCREEN_PARAMS = new FrameLayout.LayoutParams(800, ViewGroup.LayoutParams.MATCH_PARENT);
+    protected static final FrameLayout.LayoutParams COVER_SCREEN_PARAMS = new FrameLayout.LayoutParams(2000, ViewGroup.LayoutParams.MATCH_PARENT);
     private View customView;
     private FrameLayout fullscreenContainer;
     private WebChromeClient.CustomViewCallback customViewCallback;
