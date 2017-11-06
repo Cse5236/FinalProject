@@ -90,7 +90,6 @@ import com.example.whath.ui.R;
     private class MyBrowser extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
-
             view.loadUrl(url);
             return true;
         }

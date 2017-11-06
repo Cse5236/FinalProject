@@ -62,7 +62,7 @@ public class Html5VideoAutoPlay extends Activity {
                 super.onShowCustomView(view, callback);
             }
         });
-        webview.loadUrl("file:///sdcard/html/video.html");
+        webview.loadUrl("https://www.youtube.com/watch?v=4Fp34mwEhPE");
     }
 
     @Override
