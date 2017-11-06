@@ -28,7 +28,7 @@ public class WebVideoActivity extends Activity {
     private WebView webView;
 
     /** 视频全屏参数 */
-    protected static final FrameLayout.LayoutParams COVER_SCREEN_PARAMS = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT , ViewGroup.LayoutParams.MATCH_PARENT);
+    protected static final FrameLayout.LayoutParams COVER_SCREEN_PARAMS = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
     private View customView;
     private FrameLayout fullscreenContainer;
     private WebChromeClient.CustomViewCallback customViewCallback;
@@ -128,11 +128,16 @@ public class WebVideoActivity extends Activity {
 
         WebVideoActivity.this.getWindow().getDecorView();
 
-        FrameLayout decor = (FrameLayout) getWindow().getDecorView();
+        FrameLayout decor = (FrameLayout)getWindow().getDecorView();
+
         fullscreenContainer = new FullscreenHolder(WebVideoActivity.this);
-        fullscreenContainer.addView(view, COVER_SCREEN_PARAMS);
+
+        fullscreenContainer.addView(view, COVER_SCREEN_PARAMS.width*2,COVER_SCREEN_PARAMS.height);
+
         decor.addView(fullscreenContainer, COVER_SCREEN_PARAMS);
+
         customView = view;
+
         setStatusBarVisibility(false);
         customViewCallback = callback;
     }
