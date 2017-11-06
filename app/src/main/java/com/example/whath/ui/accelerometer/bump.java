@@ -13,6 +13,9 @@ import android.widget.TextView;
 import com.example.whath.ui.Domsub;
 import com.example.whath.ui.R;
 import com.example.whath.ui.model.Acceleration;
+import com.example.whath.ui.videoplayer.Html5VideoAutoPlay;
+import com.example.whath.ui.videoplayer.WebVideoActivity;
+import com.example.whath.ui.videoplayer.video_browser;
 
 import java.util.Date;
 
@@ -95,11 +98,11 @@ public class bump extends AppCompatActivity implements SensorEventListener{
         //Log.v("thelog", "===========log===================");
         TextView tvX= (TextView)findViewById(R.id.x);
         tvX.setText(Double.toString(x*x+y*y+z*z));
-        if ( Math.sqrt(x*x+y*y+z*z)>=12 )
-        {
-            Intent intent = new Intent(bump.this,Domsub.class);
+//        if ( Math.sqrt(x*x+y*y+z*z)>=12 )
+//        {
+            Intent intent = new Intent(bump.this,WebVideoActivity.class);
             startActivity(intent);
-        }
+        //}
         //tvX.setText(Double.toString(speed));
         //updateTextView(capturedAcceleration);
 

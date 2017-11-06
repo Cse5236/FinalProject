@@ -40,6 +40,25 @@
         </activity>
 
         <activity android:name=".accelerometer.bump" />
+
+
+        <activity android:name=".videoplayer.WebVideoActivity"
+            android:hardwareAccelerated ="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--<activity android:name=".videoplayer.Html5VideoAutoPlay"-->
+        <!--android:hardwareAccelerated ="true">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN" />-->
+        <!--<category android:name="android.intent.category.LAUNCHER" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+
+
     </application>
 
 </manifest>
