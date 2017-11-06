@@ -2,12 +2,14 @@ package com.example.whath.ui.videoplayer;
 
 import android.app.Activity;
 import android.content.Context;
+import android.net.http.SslError;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -63,7 +65,27 @@ public class WebVideoActivity extends Activity {
                 webView.loadUrl(url);
                 return true;
             }
+
+            /**
+             * 处理ssl请求
+             */
+            @Override
+            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+                handler.proceed();
+            }
+
+            /**
+             * 页面载入完成回调
+             */
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                view.loadUrl("javascript:try{autoplay();}catch(e){}");
+            }
+
         };
+
+
         webView.setWebViewClient(wvc);
 
         webView.setWebChromeClient(new WebChromeClient() {
@@ -73,7 +95,7 @@ public class WebVideoActivity extends Activity {
             @Override
             public View getVideoLoadingProgressView() {
                 FrameLayout frameLayout = new FrameLayout(WebVideoActivity.this);
-                frameLayout.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT*2, ViewGroup.LayoutParams.MATCH_PARENT));
+                frameLayout.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
                 return frameLayout;
             }
 
@@ -86,10 +108,14 @@ public class WebVideoActivity extends Activity {
             public void onHideCustomView() {
                 hideCustomView();
             }
+
+
+
+
         });
 
         // 加载Web地址
-        webView.loadUrl("https://www.youtube.com/watch?v=4Fp34mwEhPE");
+        webView.loadUrl("https://www.youtube.com");
     }
 
     /** 视频播放全屏 **/
