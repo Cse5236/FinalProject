@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
                                 @Override
                                 public void onClick(View v) {
                                     Toast.makeText(LoginActivity.this, "Already login", Toast.LENGTH_SHORT).show();
-                                    Intent intent3 = new Intent(LoginActivity.this, MainActivity.class);
+                                    Intent intent3 = new Intent(LoginActivity.this,MainActivity.class);
                                     startActivity(intent3);
                                 }
 

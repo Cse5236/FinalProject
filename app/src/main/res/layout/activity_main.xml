@@ -6,104 +6,97 @@
     android:layout_height="match_parent"
     tools:context="com.example.whath.ui.MainActivity">
 
+
+    <!--<EditText-->
+        <!--android:id="@+id/Text_psw"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="43dp"-->
+        <!--android:layout_alignLeft="@+id/Text_User"-->
+        <!--android:layout_alignStart="@+id/Text_User"-->
+        <!--android:layout_below="@+id/Text_User"-->
+        <!--android:layout_marginTop="19dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPassword"-->
+        <!--tools:layout_editor_absoluteX="127dp"-->
+        <!--tools:layout_editor_absoluteY="250dp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/Text_User"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/textView2"-->
+        <!--android:layout_alignBottom="@+id/textView2"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginEnd="18dp"-->
+        <!--android:layout_marginRight="18dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text=""-->
+        <!--tools:layout_editor_absoluteX="127dp"-->
+        <!--tools:layout_editor_absoluteY="182dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="136dp"-->
+        <!--android:layout_toLeftOf="@+id/Button_Login"-->
+        <!--android:layout_toStartOf="@+id/Button_Login"-->
+        <!--android:text="Username"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body2"-->
+        <!--android:textSize="17sp"-->
+        <!--tools:layout_editor_absoluteX="39dp"-->
+        <!--tools:layout_editor_absoluteY="189dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/Text_psw"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_toLeftOf="@+id/Button_Login"-->
+        <!--android:layout_toStartOf="@+id/Button_Login"-->
+        <!--android:text="Password"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body2"-->
+        <!--android:textSize="17sp"-->
+        <!--tools:layout_editor_absoluteX="39dp"-->
+        <!--tools:layout_editor_absoluteY="261dp" />-->
+
     <Button
-        android:id="@+id/Button_Login"
+        android:id="@+id/button_Loc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Text_psw"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:text="Register or Login"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="312dp" />
-
-    <EditText
-        android:id="@+id/Text_psw"
-        android:layout_width="wrap_content"
-        android:layout_height="43dp"
-        android:layout_alignLeft="@+id/Text_User"
-        android:layout_alignStart="@+id/Text_User"
-        android:layout_below="@+id/Text_User"
-        android:layout_marginTop="19dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="250dp" />
-
-    <EditText
-        android:id="@+id/Text_User"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="18dp"
-        android:layout_marginRight="18dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text=""
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="182dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="136dp"
-        android:layout_toLeftOf="@+id/Button_Login"
-        android:layout_toStartOf="@+id/Button_Login"
-        android:text="Username"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="17sp"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="189dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/Text_psw"
-        android:layout_gravity="center"
-        android:layout_toLeftOf="@+id/Button_Login"
-        android:layout_toStartOf="@+id/Button_Login"
-        android:text="Password"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="17sp"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="261dp" />
+        android:text="Local"/>
 
     <Button
-        android:id="@+id/button_lucky"
+        android:id="@+id/button_Rem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Button_Login"
+        android:layout_below="@+id/button_Loc"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="I'm feeling lucky."
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="407dp" />
+        android:text="Remote"/>
 
     <TextView
         android:id="@+id/txtStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button_lucky"
-        android:layout_alignRight="@+id/button_lucky"
         android:layout_below="@+id/login_fb_button"
-        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
         android:text="Above is facebook Login." />
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_fb_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button_lucky"
-        android:layout_alignRight="@+id/button_lucky"
-        android:layout_below="@+id/button_lucky"
+        android:layout_below="@+id/button_Rem"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="30dp" />
 
 </RelativeLayout>

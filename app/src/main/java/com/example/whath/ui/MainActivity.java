@@ -1,7 +1,6 @@
 package com.example.whath.ui;
 
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +12,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.whath.ui.accelerometer.bump;
-import com.example.whath.ui.videoplayer.LocDis;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -45,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         FacebookSdk.sdkInitialize(getApplicationContext());
+
         setContentView(R.layout.activity_main);
         Log.i("message","onCreate");
         login();
@@ -115,33 +114,56 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login() {
-        username = (EditText) findViewById(R.id.Text_User);
-        password = (EditText) findViewById(R.id.Text_psw);
-        Button buttonlogin = (Button) findViewById(R.id.Button_Login);
-        buttonlogin.setOnClickListener(new View.OnClickListener() {
+        //username = (EditText) findViewById(R.id.Text_User);
+        //password = (EditText) findViewById(R.id.Text_psw);
+        Button mButton1;
+        mButton1 = (Button) findViewById(R.id.button_Loc);
+        Log.i("message","161111");
+        mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                if(password.getText().toString().equals("a") && username.getText().toString().equals("a")){
-                    Toast.makeText(MainActivity.this, "you have logged in successfully", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this,LocDis.class);
-                    //intent.setClass(MainActivity.this,Domsub.class);
-                    startActivity(intent);
-            }else{
-                    Toast.makeText(MainActivity.this, "Incorrent username and password", Toast.LENGTH_SHORT).show();
-                    Intent intent2 = new Intent(MainActivity.this,LocDis.class);
-                    startActivity(intent2);
-                }
-        }
+            public void onClick(View view) {
 
-    });
-        Button buttonfb= (Button) findViewById(R.id.button_lucky);
-        buttonfb.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Toast.makeText(MainActivity.this, "I'm not", Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(MainActivity.this,bump.class);
+                startActivity(intent2);
             }
-        }
-        );
+        });
+
+        Button mButton2 = (Button) findViewById(R.id.button_Rem);
+
+        mButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //System.out.println("Sub was chosed.");
+                Intent intent3 = new Intent(MainActivity.this,Domsub.class);
+                startActivity(intent3);
+            }
+        });
+//
+//        Button buttonlogin = (Button) findViewById(R.id.Button_Local);
+//        buttonlogin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(password.getText().toString().equals("a") && username.getText().toString().equals("a")){
+//                    Toast.makeText(MainActivity.this, "you have logged in successfully", Toast.LENGTH_SHORT).show();
+//                    Intent intent = new Intent(MainActivity.this,Domsub.class);
+//                    //intent.setClass(MainActivity.this,Domsub.class);
+//                    startActivity(intent);
+//            }else{
+//                    Toast.makeText(MainActivity.this, "Incorrent username and password", Toast.LENGTH_SHORT).show();
+//                    Intent intent2 = new Intent(MainActivity.this,bump.class);
+//                    startActivity(intent2);
+//                }
+//        }
+//
+//    });
+//        Button buttonfb= (Button) findViewById(R.id.button_lucky);
+//        buttonfb.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v){
+//                Toast.makeText(MainActivity.this, "I'm not", Toast.LENGTH_SHORT).show();
+//            }
+//        }
+//        );
     }
 
     public void initializeControls(){
