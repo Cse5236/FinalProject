@@ -29,7 +29,7 @@ public class WebVideoActivity extends Activity {
     private WebView webView;
 
     /** 视频全屏参数 */
-    public static FrameLayout.LayoutParams COVER_SCREEN_PARAMS = new FrameLayout.LayoutParams(1400, ViewGroup.LayoutParams.MATCH_PARENT,Gravity.RIGHT);
+    protected static final FrameLayout.LayoutParams COVER_SCREEN_PARAMS = new FrameLayout.LayoutParams(1900, ViewGroup.LayoutParams.MATCH_PARENT,Gravity.RIGHT);
     //COVER_SCREEN_PARAMS.gravity=Gravity.START;
     //COVER_SCREEN_PARAMS.setMargins(-2000,176,0,0);
     private View customView;

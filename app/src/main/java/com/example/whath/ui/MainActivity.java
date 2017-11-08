@@ -118,7 +118,6 @@ public class MainActivity extends AppCompatActivity {
         //password = (EditText) findViewById(R.id.Text_psw);
         Button mButton1;
         mButton1 = (Button) findViewById(R.id.button_Loc);
-        Log.i("message","161111");
         mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
