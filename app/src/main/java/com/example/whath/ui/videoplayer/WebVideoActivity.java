@@ -1,9 +1,10 @@
 package com.example.whath.ui.videoplayer;
-
+import android.view.Gravity;
 import android.app.Activity;
 import android.content.Context;
 import android.net.http.SslError;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -28,7 +29,9 @@ public class WebVideoActivity extends Activity {
     private WebView webView;
 
     /** 视频全屏参数 */
-    protected static final FrameLayout.LayoutParams COVER_SCREEN_PARAMS = new FrameLayout.LayoutParams(2200, ViewGroup.LayoutParams.MATCH_PARENT);
+    public static FrameLayout.LayoutParams COVER_SCREEN_PARAMS = new FrameLayout.LayoutParams(1400, ViewGroup.LayoutParams.MATCH_PARENT,Gravity.RIGHT);
+    //COVER_SCREEN_PARAMS.gravity=Gravity.START;
+    //COVER_SCREEN_PARAMS.setMargins(-2000,176,0,0);
     private View customView;
     private FrameLayout fullscreenContainer;
     private WebChromeClient.CustomViewCallback customViewCallback;
