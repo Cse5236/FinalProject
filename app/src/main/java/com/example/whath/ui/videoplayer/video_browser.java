@@ -20,7 +20,7 @@ import com.example.whath.ui.R;
 
 
 /**
- * Created by Liu.3502 on 2017/11/5.
+ * Created by Star on 2017/11/5.
  */
 
     public class video_browser extends Activity {
@@ -133,7 +133,6 @@ import com.example.whath.ui.R;
 //
 //        @Override
 //        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//            // TODO Auto-generated method stub
 //            view.loadUrl(url);
 //            return true;
 //        }

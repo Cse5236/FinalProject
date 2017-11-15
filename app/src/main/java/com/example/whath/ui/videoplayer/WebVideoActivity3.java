@@ -21,7 +21,7 @@ import android.widget.FrameLayout;
 import com.example.whath.ui.R;
 
 /**
- * Created by whath on 2017/11/8.
+ * Created by Star on 2017/11/8.
  */
 
 public class WebVideoActivity3 extends Activity {

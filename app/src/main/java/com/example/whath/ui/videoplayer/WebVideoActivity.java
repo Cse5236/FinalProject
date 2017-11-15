@@ -1,4 +1,6 @@
 package com.example.whath.ui.videoplayer;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.view.Gravity;
 import android.app.Activity;
 import android.content.Context;
@@ -12,6 +14,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
+import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -19,8 +22,10 @@ import android.widget.FrameLayout;
 
 import com.example.whath.ui.R;
 
+import java.io.InputStream;
+
 /**
- * Created by Liu.3502 on 2017/11/5.
+ * Created by Star on 2017/11/5.
  */
 
 public class WebVideoActivity extends Activity {
@@ -59,7 +64,22 @@ public class WebVideoActivity extends Activity {
         webSettings.setAllowFileAccess(true); // 允许访问文件
         webSettings.setSupportZoom(true); // 支持缩放
         webSettings.setLoadWithOverviewMode(true);
-        webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE); // 不加载缓存内容
+        //webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE); // 不加载缓存内容
+
+        webSettings.setAppCacheEnabled(true);
+        webSettings.setDatabaseEnabled(true);
+        webSettings.setDomStorageEnabled(true);//开启DOM缓存，关闭的话H5自身的一些操作是无效的
+        webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
+
+        ConnectivityManager cm = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo info = cm.getActiveNetworkInfo();
+        if(info.isAvailable())
+        {
+            webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
+        }else
+        {
+            webSettings.setCacheMode(WebSettings.LOAD_CACHE_ONLY);//不使用网络，只加载缓存
+        }
 
         webView.setWebChromeClient(wvcc);
         WebViewClient wvc = new WebViewClient() {
@@ -89,7 +109,40 @@ public class WebVideoActivity extends Activity {
         };
 
 
-        webView.setWebViewClient(wvc);
+        //webView.setWebViewClient(wvc);
+        webView.setWebViewClient(new WebViewClient()
+        {
+
+            @Override
+            public WebResourceResponse shouldInterceptRequest(WebView view, String url)
+            {
+                if (url.contains("[tag]"))
+                {
+                    String localPath = url.replaceFirst("^http.*[tag]\\]", "");
+                    try
+                    {
+                        InputStream is = getApplicationContext().getAssets().open(localPath);
+                        //Log.d(TAG, "shouldInterceptRequest: localPath " + localPath);
+                        String mimeType = "text/javascript";
+                        if (localPath.endsWith("css"))
+                        {
+                            mimeType = "text/css";
+                        }
+                        return new WebResourceResponse(mimeType, "UTF-8", is);
+                    }
+                    catch (Exception e)
+                    {
+                        e.printStackTrace();
+                        return null;
+                    }
+                }
+                else
+                {
+                    return null;
+                }
+
+            }
+        });
 
         webView.setWebChromeClient(new WebChromeClient() {
 
