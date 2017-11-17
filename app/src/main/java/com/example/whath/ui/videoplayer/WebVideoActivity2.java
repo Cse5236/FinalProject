@@ -15,6 +15,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.example.whath.ui.R;
@@ -122,7 +123,7 @@ public class WebVideoActivity2 extends Activity {
 
         });
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Url");
+        final DatabaseReference myRef = database.getReference("Url");
 
         myRef.setValue("https://youtu.be/W48v6hF6qZg");
 
@@ -138,6 +139,17 @@ public class WebVideoActivity2 extends Activity {
             @Override
             public void onCancelled(DatabaseError error) {
                 Log.w(TAG, "Failed to read value.", error.toException());
+            }
+        });
+
+        Button mButtonSync2;
+        mButtonSync2 = (Button) findViewById(R.id.button_sync);
+        mButtonSync2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                String urlstr = webView.getUrl();
+                Log.d(TAG, "urlstr = "+urlstr);
+                myRef.setValue(urlstr);
             }
         });
     }

@@ -19,6 +19,7 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.example.whath.ui.R;
@@ -29,8 +30,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.io.InputStream;
+import java.io.PrintStream;
 
 import static android.content.ContentValues.TAG;
+//import android.widget.ProgressBar;
 
 /**
  * Created by Star on 2017/11/5.
@@ -40,6 +43,7 @@ public class WebVideoActivity extends Activity {
 
 
     private WebView webView;
+//    public ProgressBar progressbar;
 
     /** 视频全屏参数 */
     protected static final FrameLayout.LayoutParams COVER_SCREEN_PARAMS = new FrameLayout.LayoutParams(1900, ViewGroup.LayoutParams.MATCH_PARENT,Gravity.RIGHT);
@@ -48,6 +52,7 @@ public class WebVideoActivity extends Activity {
     private View customView;
     private FrameLayout fullscreenContainer;
     private WebChromeClient.CustomViewCallback customViewCallback;
+    //private ValueEventListener ClickListener;
 
     @Override
     protected void onCreate(Bundle bundle) {
@@ -79,6 +84,9 @@ public class WebVideoActivity extends Activity {
         webSettings.setDomStorageEnabled(true);//开启DOM缓存，关闭的话H5自身的一些操作是无效的
         webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
 
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final DatabaseReference myRef = database.getReference("Url");
+
         ConnectivityManager cm = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo info = cm.getActiveNetworkInfo();
         if(info.isAvailable())
@@ -90,10 +98,13 @@ public class WebVideoActivity extends Activity {
         }
 
         webView.setWebChromeClient(wvcc);
+
+//        webView.progressbar.setProgress(10);
         WebViewClient wvc = new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 webView.loadUrl(url);
+                //myRef.setValue(url);
                 return true;
             }
 
@@ -173,13 +184,8 @@ public class WebVideoActivity extends Activity {
                 hideCustomView();
             }
 
-
-
-
         });
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Url");
 
         myRef.setValue("https://youtu.be/W48v6hF6qZg");
 
@@ -196,7 +202,37 @@ public class WebVideoActivity extends Activity {
             public void onCancelled(DatabaseError error) {
                 Log.w(TAG, "Failed to read value.", error.toException());
             }
+
+//            @Override
+//            public void shouldOverrideUrlLoading(View view) {
+//                String seturl = webView.getUrl();
+//                myRef.setValue(seturl);
+//            }
         });
+//
+//        webView.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view){
+//                String urlstr = webView.getUrl();
+//                Log.d(TAG, urlstr);
+//                myRef.setValue(urlstr);
+//            }
+//        });
+//
+        Button mButtonSync;
+        mButtonSync = (Button) findViewById(R.id.button_sync);
+        mButtonSync.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                String urlstr = webView.getUrl();
+                Log.d(TAG, "urlstr = "+urlstr);
+                myRef.setValue(urlstr);
+            }
+        });
+
+        //ValueEventListener ClickListener = new ValueEventListener(){
+        //};
+        //myRef.addValueEventListener(ClickListener);
     }
 
     /** 视频播放全屏 **/

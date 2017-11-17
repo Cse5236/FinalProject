@@ -96,6 +96,8 @@ public class bump extends AppCompatActivity implements SensorEventListener{
         //Log.v("thelog", "===========log===================");
         TextView tvX= (TextView)findViewById(R.id.x);
         tvX.setText("Acceleration: "+Double.toString(Math.sqrt(x*x+y*y+z*z)));
+
+        if (true)
         if (x < 0 && Math.sqrt(x * x + y * y + z * z) >= 12)
         {
             Intent intent = new Intent(bump.this,WebVideoActivity.class);
@@ -106,6 +108,7 @@ public class bump extends AppCompatActivity implements SensorEventListener{
             Intent intent2 = new Intent(bump.this,WebVideoActivity3.class);
             startActivity(intent2);
         }
+
         //tvX.setText(Double.toString(speed));
         //updateTextView(capturedAcceleration);
 
