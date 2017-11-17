@@ -9,8 +9,10 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/advent_pro_medium"
         android:text="Email"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="26sp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="42dp" />
 
@@ -26,8 +28,10 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/advent_pro_medium"
         android:text="Password"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="26sp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="118dp" />
 
@@ -43,9 +47,11 @@
         android:id="@+id/button_flogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="bottom|center"
+        android:fontFamily="@font/advent_pro_medium"
         android:onClick="login"
         android:text="LOGIN"
+        android:textSize="24sp"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="206dp" />
 
