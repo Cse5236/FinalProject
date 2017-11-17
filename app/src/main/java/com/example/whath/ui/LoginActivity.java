@@ -62,9 +62,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void login(View v){
-        final String email = ((EditText)findViewById(R.id.email))
+        final String email = ((EditText)findViewById(R.id.temail))
                 .getText().toString();
-        final String password = ((EditText)findViewById(R.id.password))
+        final String password = ((EditText)findViewById(R.id.tpassword))
                 .getText().toString();
         Log.d("authentication", email+"/"+password);
         auth.signInWithEmailAndPassword(email, password)

@@ -2,4 +2,6 @@
     <string name="app_name">UI</string>
     <string name="facebook_app_id">253957581794807</string>
     <string name="fb_login_protocol_scheme">fb253957581794807</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
 </resources>
