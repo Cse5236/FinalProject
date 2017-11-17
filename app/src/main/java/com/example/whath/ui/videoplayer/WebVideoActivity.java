@@ -1,6 +1,7 @@
 package com.example.whath.ui.videoplayer;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.util.Log;
 import android.view.Gravity;
 import android.app.Activity;
 import android.content.Context;
@@ -21,8 +22,15 @@ import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 
 import com.example.whath.ui.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.io.InputStream;
+
+import static android.content.ContentValues.TAG;
 
 /**
  * Created by Star on 2017/11/5.
@@ -170,8 +178,25 @@ public class WebVideoActivity extends Activity {
 
         });
 
-        // 加载Web地址
-        webView.loadUrl("https://youtu.be/W48v6hF6qZg");
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("Url");
+
+        myRef.setValue("https://youtu.be/W48v6hF6qZg");
+
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String value = (String) dataSnapshot.getValue(String.class);
+                Log.d(TAG, "Value is: " + value);
+                // 加载Web地址
+                webView.loadUrl(value);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                Log.w(TAG, "Failed to read value.", error.toException());
+            }
+        });
     }
 
     /** 视频播放全屏 **/
