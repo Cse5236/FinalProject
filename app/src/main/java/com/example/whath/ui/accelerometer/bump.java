@@ -16,6 +16,7 @@ import com.example.whath.ui.videoplayer.WebVideoActivity;
 import com.example.whath.ui.videoplayer.WebVideoActivity3;
 import com.example.whath.ui.videoplayer.videoLocal;
 import com.example.whath.ui.videoplayer.videoRemote;
+import com.example.whath.ui.videoplayer.videoRemoteRight;
 
 import java.util.Date;
 
@@ -100,19 +101,21 @@ public class bump extends AppCompatActivity implements SensorEventListener{
         tvX.setText("Acceleration: "+Double.toString(Math.sqrt(x*x+y*y+z*z)));
 
         //if (true)
-        Intent intent3 = new Intent(bump.this,videoLocal.class);
-        startActivity(intent3);
+//        Intent intent3 = new Intent(bump.this,videoLocal.class);
+//        startActivity(intent3);
 
-//        if (x < 0 && Math.sqrt(x * x + y * y + z * z) >= 12)
-//        {
-//            Intent intent = new Intent(bump.this,WebVideoActivity.class);
-//            startActivity(intent);
-//        }
-//        else if(x>0 && Math.sqrt(x * x + y * y + z * z)>=12)
-//        {
-//            Intent intent2 = new Intent(bump.this,WebVideoActivity3.class);
-//            startActivity(intent2);
-//        }
+        if (x < 0 && Math.sqrt(x * x + y * y + z * z) >= 12)
+        {
+            Intent intent = new Intent(bump.this,videoRemoteRight.class);
+            //Intent intent = new Intent(bump.this,WebVideoActivity.class);
+            startActivity(intent);
+        }
+        else if(x>0 && Math.sqrt(x * x + y * y + z * z)>=12)
+        {
+            //Intent intent2 = new Intent(bump.this,WebVideoActivity3.class);
+            Intent intent2 = new Intent(bump.this,videoRemote.class);
+            startActivity(intent2);
+        }
 
         //tvX.setText(Double.toString(speed));
         //updateTextView(capturedAcceleration);

@@ -41,6 +41,7 @@
         </activity>
 
         <activity android:name=".accelerometer.bump" />
+        <activity android:name=".accelerometer.bumpLoc" />
 
         <activity android:name=".videoplayer.videoLocal"
             android:hardwareAccelerated ="true">
@@ -51,6 +52,21 @@
         </activity>
 
         <activity android:name=".videoplayer.videoRemote"
+            android:hardwareAccelerated ="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".videoplayer.videoLocalRight"
+            android:hardwareAccelerated ="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".videoplayer.videoRemoteRight"
             android:hardwareAccelerated ="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
