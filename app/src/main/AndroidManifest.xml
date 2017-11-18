@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".Domsub" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".Newpage" />
 
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>
@@ -41,6 +42,21 @@
 
         <activity android:name=".accelerometer.bump" />
 
+        <activity android:name=".videoplayer.videoLocal"
+            android:hardwareAccelerated ="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".videoplayer.videoRemote"
+            android:hardwareAccelerated ="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity android:name=".videoplayer.WebVideoActivity"
             android:hardwareAccelerated ="true">

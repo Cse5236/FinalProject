@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent2 = new Intent(MainActivity.this,bump.class);
+                Intent intent2 = new Intent(MainActivity.this,Newpage.class);
                 startActivity(intent2);
             }
         });

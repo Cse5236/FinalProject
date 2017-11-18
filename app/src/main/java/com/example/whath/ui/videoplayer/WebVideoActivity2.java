@@ -1,7 +1,10 @@
 package com.example.whath.ui.videoplayer;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.net.http.SslError;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +21,7 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
+import com.example.whath.ui.MainActivity;
 import com.example.whath.ui.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -48,6 +52,7 @@ public class WebVideoActivity2 extends Activity {
         setContentView(R.layout.browser);
         webView = (WebView) findViewById(R.id.webView);
         initWebView();
+//        isWifi();
     }
 
     @Override
@@ -55,6 +60,34 @@ public class WebVideoActivity2 extends Activity {
         super.onStop();
         webView.reload();
     }
+//
+//    /*  wifi???? */
+//    public static boolean isWifi(Context context) {
+//        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+//        if (cm == null){
+//            openSetting(WebVideoActivity2);
+//            return false;
+//        }
+//        return cm.getActiveNetworkInfo().getType() == ConnectivityManager.TYPE_WIFI;
+//
+//    }
+//
+//    /**
+//     * 打开网络设置界面
+//     */
+//    public static void openSetting(Activity activity) {
+//        Intent intent = null;
+//        if (android.os.Build.VERSION.SDK_INT > 10) {
+//            intent = new Intent(android.provider.Settings.ACTION_SETTINGS);
+//        } else {
+//            intent = new Intent();
+//            ComponentName component = new ComponentName("com.android.settings", "com.android.settings.WirelessSettings");
+//            intent.setComponent(component);
+//            intent.setAction("android.intent.action.VIEW");
+//        }
+//        activity.startActivityForResult(intent, 0);
+//    }
+
 
     /** 展示网页界面 **/
     public void initWebView() {
