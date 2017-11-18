@@ -100,7 +100,7 @@ public class bump extends AppCompatActivity implements SensorEventListener{
         tvX.setText("Acceleration: "+Double.toString(Math.sqrt(x*x+y*y+z*z)));
 
         //if (true)
-        Intent intent3 = new Intent(bump.this,videoRemote.class);
+        Intent intent3 = new Intent(bump.this,videoLocal.class);
         startActivity(intent3);
 
 //        if (x < 0 && Math.sqrt(x * x + y * y + z * z) >= 12)
