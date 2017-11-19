@@ -4,8 +4,12 @@ package com.example.whath.ui;
  * Created by Star on 2017/11/5.
  */
 
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
@@ -47,6 +51,13 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         };
+        if (isConn()) {
+            Toast.makeText(LoginActivity.this, "Network is connected", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(LoginActivity.this, "Network is not connected", Toast.LENGTH_SHORT).show();
+            setNetworkMethod();
+        }
     }
 
     @Override
@@ -120,5 +131,44 @@ public class LoginActivity extends AppCompatActivity {
                                         .show();
                             }
                         });
+    }
+
+    public boolean isConn(){
+        boolean bisConnFlag=false;
+        ConnectivityManager conManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo network = conManager.getActiveNetworkInfo();
+        if(network!=null){
+            bisConnFlag=conManager.getActiveNetworkInfo().isAvailable();
+        }
+        return bisConnFlag;
+    }
+
+    public void setNetworkMethod(){
+        //提示对话框
+        AlertDialog.Builder builder=new AlertDialog.Builder(this);
+        builder.setTitle("Network Notification").setMessage("Network disconnected. Got to settings?").setPositiveButton("Settings", new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent=null;
+                //判断手机系统的版本  即API大于10 就是3.0或以上版本
+                if(android.os.Build.VERSION.SDK_INT>10){
+                    //intent = new Intent(android.provider.Settings.ACTION_WIRELESS_SETTINGS);
+                    intent = new Intent(android.provider.Settings.ACTION_WIFI_SETTINGS);
+                }else{
+                    intent = new Intent();
+                    ComponentName component = new ComponentName("com.android.settings","com.android.settings.WirelessSettings");
+                    intent.setComponent(component);
+                    intent.setAction("android.intent.action.VIEW");
+                }
+                startActivity(intent);
+            }
+        }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        }).show();
     }
 }
