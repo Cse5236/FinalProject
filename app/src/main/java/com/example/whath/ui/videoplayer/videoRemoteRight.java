@@ -5,13 +5,19 @@ package com.example.whath.ui.videoplayer;
  */
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -19,8 +25,10 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.MediaController;
+import android.widget.Toast;
 import android.widget.VideoView;
 
+import com.example.whath.ui.LoginActivity;
 import com.example.whath.ui.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -51,6 +59,14 @@ public class videoRemoteRight extends Activity
 
         //get the VideoView from the layout file
         vView = (VideoView)findViewById(R.id.vview);
+
+        if (isConn()) {
+            Toast.makeText(videoRemoteRight.this, "Network is connected", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            //Toast.makeText(videoRemoteRight.this, "Network is not connected", Toast.LENGTH_SHORT).show();
+            setNetworkMethod();
+        }
 
         FrameLayout.LayoutParams lp1=new FrameLayout.LayoutParams(2000,FrameLayout.LayoutParams.MATCH_PARENT, Gravity.RIGHT);
         //FrameLayout.LayoutParams lp2=new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,FrameLayout.LayoutParams.MATCH_PARENT);
@@ -185,5 +201,45 @@ public class videoRemoteRight extends Activity
         current2=vView.getDuration();
        // Toast.makeText(videoRemote.this, String.valueOf(current), Toast.LENGTH_SHORT).show();
        */
+    }
+
+
+    public boolean isConn(){
+        boolean bisConnFlag=false;
+        ConnectivityManager conManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo network = conManager.getActiveNetworkInfo();
+        if(network!=null){
+            bisConnFlag=conManager.getActiveNetworkInfo().isAvailable();
+        }
+        return bisConnFlag;
+    }
+
+    public void setNetworkMethod(){
+        //提示对话框
+        AlertDialog.Builder builder=new AlertDialog.Builder(this);
+        builder.setTitle("Network Notification").setMessage("Network disconnected. Got to settings?").setPositiveButton("Settings", new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent=null;
+                //判断手机系统的版本  即API大于10 就是3.0或以上版本
+                if(android.os.Build.VERSION.SDK_INT>10){
+                    //intent = new Intent(android.provider.Settings.ACTION_WIRELESS_SETTINGS);
+                    intent = new Intent(android.provider.Settings.ACTION_WIFI_SETTINGS);
+                }else{
+                    intent = new Intent();
+                    ComponentName component = new ComponentName("com.android.settings","com.android.settings.WirelessSettings");
+                    intent.setComponent(component);
+                    intent.setAction("android.intent.action.VIEW");
+                }
+                startActivity(intent);
+            }
+        }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        }).show();
     }
 }
