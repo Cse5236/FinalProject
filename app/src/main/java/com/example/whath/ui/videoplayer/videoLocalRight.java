@@ -51,7 +51,7 @@ public class videoLocalRight extends Activity
 
         final AudioManager mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-        FrameLayout.LayoutParams lp1=new FrameLayout.LayoutParams(2000,FrameLayout.LayoutParams.MATCH_PARENT, Gravity.RIGHT);
+        FrameLayout.LayoutParams lp1=new FrameLayout.LayoutParams(2000,900, Gravity.RIGHT);
         //FrameLayout.LayoutParams lp1=new FrameLayout.LayoutParams(2000,FrameLayout.LayoutParams.MATCH_PARENT);
 
         //FrameLayout.LayoutParams lp2=new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,FrameLayout.LayoutParams.MATCH_PARENT);

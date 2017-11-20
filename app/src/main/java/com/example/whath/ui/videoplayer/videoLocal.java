@@ -50,7 +50,7 @@ public class videoLocal extends Activity
 
 
         //FrameLayout.LayoutParams lp1=new FrameLayout.LayoutParams(2000,FrameLayout.LayoutParams.MATCH_PARENT, Gravity.RIGHT);
-        FrameLayout.LayoutParams lp1=new FrameLayout.LayoutParams(2000,FrameLayout.LayoutParams.MATCH_PARENT);
+        FrameLayout.LayoutParams lp1=new FrameLayout.LayoutParams(2000,900);
 
         //FrameLayout.LayoutParams lp2=new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,FrameLayout.LayoutParams.MATCH_PARENT);
         //View video_play_layout_head;
