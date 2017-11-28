@@ -75,7 +75,7 @@
         android:layout_marginTop="25dp"
         android:background="?android:attr/textCursorDrawable"
         android:fontFamily="@font/advent_pro_medium"
-        android:text="Local"
+        android:text="Face To Face"
         android:textColor="@android:color/white"
         android:textSize="22sp" />
 
@@ -89,7 +89,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/advent_pro_medium"
-        android:text="Remote"
+        android:text="Remote Connection"
         android:textSize="22sp" />
 
     <TextView
