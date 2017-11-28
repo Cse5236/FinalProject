@@ -10,6 +10,8 @@
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
         android:adjustViewBounds="true"
         android:baselineAligned="false"
         android:contentDescription="@string/app_name"
@@ -22,6 +24,8 @@
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
         android:adjustViewBounds="true"
         android:baselineAligned="false"
         android:contentDescription="@string/app_name"
@@ -33,6 +37,14 @@
         android:id="@+id/Confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Confirm" />
+        android:layout_gravity="bottom|center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="Confirm"
+        android:textColor="?android:attr/windowBackground"
+        android:textSize="30sp"
+        android:typeface="normal" />
     />
 </LinearLayout>
