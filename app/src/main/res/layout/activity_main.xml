@@ -67,20 +67,30 @@
 
     <Button
         android:id="@+id/button_Loc"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="25dp"
-        android:text="Local"/>
+        android:background="?android:attr/textCursorDrawable"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="Local"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/button_Rem"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_Loc"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="15dp"
-        android:text="Remote"/>
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="Remote"
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/txtStatus"
@@ -92,11 +102,15 @@
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_fb_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_Rem"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:textSize="18sp" />
 
 </RelativeLayout>
