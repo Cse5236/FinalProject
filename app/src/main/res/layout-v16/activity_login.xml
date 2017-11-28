@@ -21,14 +21,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:background="?android:attr/windowBackground">
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="TODO"
                 android:visibility="visible"
-                app:srcCompat="@drawable/email" android:contentDescription="TODO"/>
+                app:srcCompat="@drawable/email" />
 
             <EditText
                 android:id="@+id/temail"
@@ -36,6 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/advent_pro_medium"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress" />
@@ -44,14 +49,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:background="?android:attr/windowBackground">
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="TODO"
                 android:visibility="visible"
-                app:srcCompat="@drawable/lock" android:contentDescription="TODO"/>
+                app:srcCompat="@drawable/lock" />
 
             <EditText
                 android:id="@+id/tpassword"
@@ -59,6 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/advent_pro_medium"
                 android:gravity="bottom"
                 android:hint="@string/password"
