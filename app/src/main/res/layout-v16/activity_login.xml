@@ -82,8 +82,6 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@color/colorAccent"
@@ -92,5 +90,29 @@
         android:text="LOGIN"
         android:textColor="@color/cardview_light_background"
         android:textSize="30sp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_fb_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_Rem"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_fb_button"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="Above is facebook Login."
+        android:textSize="12sp" />
 
 </LinearLayout>
