@@ -18,5 +18,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_Loc"
         android:layout_marginTop="50dp"
-        android:text="Sync" />
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:text="Sync"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 </FrameLayout>
