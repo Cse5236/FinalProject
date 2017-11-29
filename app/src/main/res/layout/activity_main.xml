@@ -6,32 +6,49 @@
     android:layout_height="match_parent"
     tools:context="com.example.whath.ui.MainActivity">
 
-    <Button
-        android:id="@+id/button_Loc"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="25dp"
-        android:background="?android:attr/textCursorDrawable"
-        android:fontFamily="@font/advent_pro_medium"
-        android:text="Face To Face"
-        android:textColor="@android:color/white"
-        android:textSize="22sp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button_Rem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_Loc"
+        <Button
+            android:id="@+id/button_Loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:background="@color/cardview_shadow_end_color"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="Face To Face"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button_Rem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_Loc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@color/cardview_shadow_end_color"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="Remote Connection"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/advent_pro_medium"
-        android:text="Remote Connection"
-        android:textSize="22sp" />
+        app:srcCompat="@drawable/menu" />
 
     <TextView
         android:id="@+id/txtStatus"
@@ -45,12 +62,10 @@
         android:id="@+id/login_fb_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_Rem"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="30dp"
         android:fontFamily="@font/advent_pro_medium"
         android:textSize="18sp" />
 
