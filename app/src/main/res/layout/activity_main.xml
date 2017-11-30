@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/App_backg"
         android:orientation="vertical">
 
         <Button
@@ -22,7 +23,6 @@
             android:layout_weight="1"
             android:background="@color/cardview_shadow_end_color"
             android:fontFamily="@font/advent_pro_medium"
-            android:text="Face To Face"
             android:textColor="@android:color/white"
             android:textSize="22sp" />
 
@@ -38,7 +38,6 @@
             android:layout_weight="1"
             android:background="@color/cardview_shadow_end_color"
             android:fontFamily="@font/advent_pro_medium"
-            android:text="Remote Connection"
             android:textSize="22sp" />
     </LinearLayout>
 
