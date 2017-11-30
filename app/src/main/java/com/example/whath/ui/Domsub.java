@@ -26,8 +26,8 @@ public class Domsub extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.domsub);
 
-        ImageButton DsButton1;
-        DsButton1 = (ImageButton) findViewById(R.id.imageButton1);
+        Button DsButton1;
+        DsButton1 = (Button) findViewById(R.id.imageButton1);
 
         DsButton1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +38,7 @@ public class Domsub extends AppCompatActivity {
             }
         });
 
-        ImageButton DsButton2 = (ImageButton) findViewById(R.id.imageButton2);
+        Button DsButton2 = (Button) findViewById(R.id.imageButton2);
 
         DsButton2.setOnClickListener(new View.OnClickListener() {
             @Override
