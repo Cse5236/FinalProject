@@ -49,31 +49,31 @@ public class MainActivity extends AppCompatActivity {
         login();
 
         mAuth = FirebaseAuth.getInstance();
-        initializeControls();
+        //initializeControls();
 
-        LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                Log.i("message","FacebookLogin_onSuccess");
-                txtStatus.setText("FacebookLoginSuccess\n"+loginResult.getAccessToken());
-                Toast.makeText(MainActivity.this, "FacebookLogin_onSuccess", Toast.LENGTH_SHORT).show();
-                handleFacebookAccessToken(loginResult.getAccessToken());
-            }
-
-            @Override
-            public void onCancel() {
-                Log.i("message","FacebookLogin_onCancel");
-                txtStatus.setText("FacebookLoginCancel");
-                Toast.makeText(MainActivity.this, "FacebookLogin_onCancel", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onError(FacebookException error) {
-                Log.i("message","FacebookLogin_onError");
-                txtStatus.setText("FacebookLoginError: "+error.getMessage());
-                Toast.makeText(MainActivity.this, "FacebookLogin_onError", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+//            @Override
+//            public void onSuccess(LoginResult loginResult) {
+//                Log.i("message","FacebookLogin_onSuccess");
+//                txtStatus.setText("FacebookLoginSuccess\n"+loginResult.getAccessToken());
+//                Toast.makeText(MainActivity.this, "FacebookLogin_onSuccess", Toast.LENGTH_SHORT).show();
+//                handleFacebookAccessToken(loginResult.getAccessToken());
+//            }
+//
+//            @Override
+//            public void onCancel() {
+//                Log.i("message","FacebookLogin_onCancel");
+//                txtStatus.setText("FacebookLoginCancel");
+//                Toast.makeText(MainActivity.this, "FacebookLogin_onCancel", Toast.LENGTH_SHORT).show();
+//            }
+//
+//            @Override
+//            public void onError(FacebookException error) {
+//                Log.i("message","FacebookLogin_onError");
+//                txtStatus.setText("FacebookLoginError: "+error.getMessage());
+//                Toast.makeText(MainActivity.this, "FacebookLogin_onError", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
     }
 

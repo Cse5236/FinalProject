@@ -95,7 +95,6 @@
         android:id="@+id/login_fb_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_Rem"
         android:layout_centerHorizontal="true"
         android:layout_gravity="bottom|center"
         android:layout_marginLeft="20dp"
