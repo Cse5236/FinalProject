@@ -143,13 +143,13 @@ public class MainActivity extends AppCompatActivity {
 //            @Override
 //            public void onClick(View v) {
 //                if(password.getText().toString().equals("a") && username.getText().toString().equals("a")){
-//                    Toast.makeText(MainActivity.this, "you have logged in successfully", Toast.LENGTH_SHORT).show();
-//                    Intent intent = new Intent(MainActivity.this,Domsub.class);
-//                    //intent.setClass(MainActivity.this,Domsub.class);
+//                    Toast.makeText(shake.this, "you have logged in successfully", Toast.LENGTH_SHORT).show();
+//                    Intent intent = new Intent(shake.this,Domsub.class);
+//                    //intent.setClass(shake.this,Domsub.class);
 //                    startActivity(intent);
 //            }else{
-//                    Toast.makeText(MainActivity.this, "Incorrent username and password", Toast.LENGTH_SHORT).show();
-//                    Intent intent2 = new Intent(MainActivity.this,bump.class);
+//                    Toast.makeText(shake.this, "Incorrent username and password", Toast.LENGTH_SHORT).show();
+//                    Intent intent2 = new Intent(shake.this,bump.class);
 //                    startActivity(intent2);
 //                }
 //        }
@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
 //        buttonfb.setOnClickListener(new View.OnClickListener(){
 //            @Override
 //            public void onClick(View v){
-//                Toast.makeText(MainActivity.this, "I'm not", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(shake.this, "I'm not", Toast.LENGTH_SHORT).show();
 //            }
 //        }
 //        );

@@ -97,8 +97,10 @@ public class bump extends AppCompatActivity implements SensorEventListener{
         double speed = Math.sqrt(deltaX * deltaX + deltaY * deltaY + deltaZ
                 * deltaZ)/ timeInterval * 10000;
         //Log.v("thelog", "===========log===================");
-        TextView tvX= (TextView)findViewById(R.id.x);
-        tvX.setText("Acceleration: "+Double.toString(Math.sqrt(x*x+y*y+z*z)));
+
+
+        //TextView tvX= (TextView)findViewById(R.id.x);
+        //tvX.setText("Acceleration: "+Double.toString(Math.sqrt(x*x+y*y+z*z)));
 
         //if (true)
 //        Intent intent3 = new Intent(bump.this,videoLocal.class);
@@ -133,7 +135,8 @@ public class bump extends AppCompatActivity implements SensorEventListener{
                 "\nY:" + capturedAcceleration.getY() +
                 "\nZ:" + capturedAcceleration.getZ() +
                 "\nTimestamp:" + capturedAcceleration.getTimestamp());*/
-        TextView tvX= (TextView)findViewById(R.id.x);
+
+        //TextView tvX= (TextView)findViewById(R.id.x);
         //TextView tvY= (TextView)findViewById(R.id.y);
         //TextView tvZ= (TextView)findViewById(R.id.z);
 
@@ -142,7 +145,7 @@ public class bump extends AppCompatActivity implements SensorEventListener{
         float z= (float) capturedAcceleration.getZ();
 
 
-        tvX.setText(Float.toString(x));
+        //tvX.setText(Float.toString(x));
         //tvY.setText(Float.toString(y));
         //tvZ.setText(Float.toString(z));
     }
