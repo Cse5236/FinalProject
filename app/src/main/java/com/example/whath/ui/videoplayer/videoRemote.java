@@ -23,7 +23,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.webkit.WebChromeClient;
 import android.widget.Button;
-import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -79,7 +79,7 @@ public class videoRemote extends Activity
             setNetworkMethod();
         }
 
-        FrameLayout.LayoutParams lp1=new FrameLayout.LayoutParams(2000,900);
+        LinearLayout.LayoutParams lp1=new LinearLayout.LayoutParams(2000,900);
         //FrameLayout.LayoutParams lp1=new FrameLayout.LayoutParams(2000,FrameLayout.LayoutParams.MATCH_PARENT, Gravity.RIGHT);
         //FrameLayout.LayoutParams lp2=new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,FrameLayout.LayoutParams.MATCH_PARENT);
         //View video_play_layout_head;
@@ -101,7 +101,7 @@ public class videoRemote extends Activity
 
         videoRemote.this.getWindow().getDecorView();
 
-        FrameLayout decor = (FrameLayout)getWindow().getDecorView();
+        LinearLayout decor = (LinearLayout)getWindow().getDecorView();
 
 
         //use this to get touch events

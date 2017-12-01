@@ -62,6 +62,9 @@ public class LoginActivity extends AppCompatActivity {
     CallbackManager callbackManager;
     private FirebaseAuth mAuth;
 
+    public static final String REGEX_EMAIL = "^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -155,10 +158,14 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void login(View v){
+
         final String email = ((EditText)findViewById(R.id.temail))
                 .getText().toString();
         final String password = ((EditText)findViewById(R.id.tpassword))
                 .getText().toString();
+
+
+
         Log.d("authentication", email+"/"+password);
         auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
