@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.15"
+        android:gravity="top"
         android:orientation="horizontal"
         android:weightSum="1">
 
@@ -18,6 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.8"
             android:text="Enter Url"
+            android:textColor="@color/cardview_dark_background"
             android:textSize="30sp" />
 
         <Button
@@ -39,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/button_Loc"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/com_facebook_tooltip_black_background"
             android:text="Sync"
             android:textColor="@android:color/white"

@@ -25,6 +25,7 @@ import android.webkit.WebChromeClient;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.VideoView;
 import android.widget.Toast;
 
@@ -42,14 +43,14 @@ import static java.lang.Thread.sleep;
 public class videoRemote extends Activity
 {
     private VideoView vView;
+    private Button vbutton;
+    private TextView vUrl;
     private String vSource;
     private int current=0;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
-
-
         final AudioManager mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
 
@@ -60,6 +61,15 @@ public class videoRemote extends Activity
 
         //get the VideoView from the layout file
         vView = (VideoView)findViewById(R.id.vview);
+        vUrl=(TextView)findViewById(R.id.web_UrlText);
+        vbutton =(Button)findViewById(R.id.web_UrlButton);
+
+        vbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vSource=vUrl.toString();
+            }
+        });
 
         if (isConn()) {
             Toast.makeText(videoRemote.this, "Network is connected", Toast.LENGTH_SHORT).show();
