@@ -31,8 +31,8 @@ public class Newpage extends AppCompatActivity {
         Button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent2 = new Intent(Newpage.this,bumpLoc.class);
-                //Log.d(TAG,"hahaha");
                 startActivity(intent2);
             }
         });

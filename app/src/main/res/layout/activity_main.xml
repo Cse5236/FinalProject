@@ -9,7 +9,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/App_backg"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/menu"
         android:orientation="vertical">
 
         <Button
@@ -41,14 +45,6 @@
             android:fontFamily="@font/advent_pro_medium"
             android:textSize="22sp" />
     </LinearLayout>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/menu" />
 
     <!--<TextView-->
         <!--android:id="@+id/txtStatus"-->
