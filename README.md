@@ -15,6 +15,7 @@ The phone screen is too small for several people to watch videos on a single mob
 <img src="https://lh3.googleusercontent.com/560vxPg9NLArCER1TUt9_SPOD50HPQR4Q0pzoV5_nyoM9-KtrpDiJSeegPrZBfZQ9aaRlcwoXqaer-wZfNjx4KoOCFMeuWwaXvwXlN3LrjEBCl22rte56Hc8Esp06V-IeArGdCQTU9xDWFU2oUyYX6N2MbUD_fb0qRjK1r-yMFoyfbCFp-j05mq5wD57psFo255SXeiqgpI0ZnNYwi3hH959CjOvOzne0_kBD0wx1xcWjg5pGyRiO0HX8g-vNtN_PcOp-QQDqsmgOkpXxGfOWYW6xykYdmv_vrBB_DleeN8WLH9pTV56cng0QZnOg4q3qkr5GUnO6H19scXCwvtyt61v32qjvg5yy-VBCVYg2fPDk2Ubmw3kwrcuI53aww_vZMQw4v3PmGkVarQtDET35EWodE1SS10n6V4MudvmwbSGH1I10R1xZYbfmmxisIiMxjfTN970unvlzrZv5PpGe_tzktwVekn5ov8BxnOMh_7XrUtsWLDPY-KwphHs-zLx3QTXpX1GjvffAJAh1nstWX6r3x3m3IlMKBKecovmfhoJd1_twxn0H14HObswLRxm=w2788-h1560" width="30%" height="30%">
 </div>
 
+<div>
 <div align=center>
   Remote mode(webview).
 </div>
@@ -30,7 +31,7 @@ The phone screen is too small for several people to watch videos on a single mob
 <div align = center>
 <img src="https://lh3.googleusercontent.com/jOK_lce1CHGjquk3JufmgeRaez-eNGEXMzsQzmG6z-oBuyvv1Lwtc2DtRNsBTXJoa-3Bjcdw0b1bD-rjuffR1WblHRFRJ11zDbGTlBmXhy_Hj-es5XTt7nFtA3s__Dp0TzHg2Ueh-GSyXfcNUzhAgOgKVIP88VaXRkg2jRaTcTMu3SGzd0H9d5i7gBA-kct39uKRouhb1hY7cj3bq-q2ioaFKuhkQxinSXo3tYm-dQ7o5iLYvkF-Wr3kD8JvRcA_FqkgYwNculY8y76Y5IvGIo2NHMErHwBGJbG9jV4AxkshTCBvDOO8JfRXQ_8dxuWPY0MMeeBGj-qCyUnS5QopqXlxZlHCQ-meDSgUYyIjeMtxlV0YbDcYu0N3b52401xmk5csKiBVS1UadWXlSERyZRq-UFjzSH9eKTEje4uqA9sKCZT0b7wLV8kVKbb34tVTzUI85WoH79uVpk1fwUsRtmzbMJ-VX8LYjx0r2PLGag04Nijyg0QFgYTvJdv772KBPnS2g_yxGF7c2nU66W5Y2fDpS9gLZfFzkkG9wbYoQVYf5Nc0bgVeIxzO-Ze-ixhd=w1972-h1528" width="30%" height="30%">
 </div>
-
+</div>
 
 ### 3.Bump module
   * The decision of mobile's comparative location.
