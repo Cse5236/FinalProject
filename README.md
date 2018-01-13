@@ -1,6 +1,4 @@
-```
 # Bump2Share
-```
 > Developing a mobile application on the Android
 
 ## Introduce ## 
