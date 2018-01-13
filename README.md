@@ -10,6 +10,9 @@ The phone screen is too small for several people to watch videos on a single mob
 
 
 ### 2.Mode selection
+<div align=center>
+<img src="https://lh3.googleusercontent.com/560vxPg9NLArCER1TUt9_SPOD50HPQR4Q0pzoV5_nyoM9-KtrpDiJSeegPrZBfZQ9aaRlcwoXqaer-wZfNjx4KoOCFMeuWwaXvwXlN3LrjEBCl22rte56Hc8Esp06V-IeArGdCQTU9xDWFU2oUyYX6N2MbUD_fb0qRjK1r-yMFoyfbCFp-j05mq5wD57psFo255SXeiqgpI0ZnNYwi3hH959CjOvOzne0_kBD0wx1xcWjg5pGyRiO0HX8g-vNtN_PcOp-QQDqsmgOkpXxGfOWYW6xykYdmv_vrBB_DleeN8WLH9pTV56cng0QZnOg4q3qkr5GUnO6H19scXCwvtyt61v32qjvg5yy-VBCVYg2fPDk2Ubmw3kwrcuI53aww_vZMQw4v3PmGkVarQtDET35EWodE1SS10n6V4MudvmwbSGH1I10R1xZYbfmmxisIiMxjfTN970unvlzrZv5PpGe_tzktwVekn5ov8BxnOMh_7XrUtsWLDPY-KwphHs-zLx3QTXpX1GjvffAJAh1nstWX6r3x3m3IlMKBKecovmfhoJd1_twxn0H14HObswLRxm=w2788-h1560" width="30%" height="30%">
+</div>
   * Remote mode(webview).
   
 <div align = center>
