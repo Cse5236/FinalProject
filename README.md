@@ -11,7 +11,7 @@ The phone screen is too small for several people to watch videos on a single mob
 
 
 ## Modules ## 
-### 1.User login or Facebook login Connection ###
+### 1.User Email Sign in or Facebook Login Connection ###
 <div align=center>
 <img src="https://lh3.googleusercontent.com/iO6uL60O1LLgGCfpxNO4vz2d03gJhqt9RbQ1PhxlITWEr11e1IPT-t3pet8vdGwkXF-RKGZZb2_eUnk_8ThOjOSB_ltPPPznfCZowbGwsK3I_a0K0_3b0F0lfYgc94g0CaNEhPIUITqkn8_t5YH9aaiWpTHjxG3GMtR2OHHAbT7-0pn0pQoFTKnlm7saSCc05c3gRY28flLPvgJrbkLlconrwtQndAh1ZcrNdQB7IG_o_vq1T-WwJ_3Q4huEQpOGP1cpuDbzZGMf4C89OqX226Ft_Bgb_IvfOa_kJev-BdFNOtzqicmfPhavVklxo8IlH0IpgykcY6o1ixL7tygpweOOeiI3ABonit3ETXwA4AjIFymLpYN--P4ABU6xNpISwL1bj04FFeVD2RUzUg1wou0irdCyv8GS0pBVmTMPXNlY3QuAA8Je_8Oj34QyUZGTAxDV83dJMyp-R3mPLYe87UDsrhY9DFFMQ0Trk_xY_8ztfWRfACanxMc7apQiAm-M7HclKgAophSnjyniUXvl6VD1zCN0dRWZI9D_HRqxaeVqWsHoj63QJ1BFuu9A_AE8=w2788-h1560" width="30%" height="30%">
 </div>
