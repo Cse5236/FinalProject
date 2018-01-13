@@ -2,14 +2,14 @@
 
 The phone screen is too small for several people to watch videos on a single mobile phone. This app enables the users to split an online or local video into several parts and display them simutaneously on several mobile phones.
 
-## Modules
-### 1.User login or Facebook login Connection
+## Modules ## 
+### 1.User login or Facebook login Connection ###
 <div align=center>
 <img src="https://lh3.googleusercontent.com/iO6uL60O1LLgGCfpxNO4vz2d03gJhqt9RbQ1PhxlITWEr11e1IPT-t3pet8vdGwkXF-RKGZZb2_eUnk_8ThOjOSB_ltPPPznfCZowbGwsK3I_a0K0_3b0F0lfYgc94g0CaNEhPIUITqkn8_t5YH9aaiWpTHjxG3GMtR2OHHAbT7-0pn0pQoFTKnlm7saSCc05c3gRY28flLPvgJrbkLlconrwtQndAh1ZcrNdQB7IG_o_vq1T-WwJ_3Q4huEQpOGP1cpuDbzZGMf4C89OqX226Ft_Bgb_IvfOa_kJev-BdFNOtzqicmfPhavVklxo8IlH0IpgykcY6o1ixL7tygpweOOeiI3ABonit3ETXwA4AjIFymLpYN--P4ABU6xNpISwL1bj04FFeVD2RUzUg1wou0irdCyv8GS0pBVmTMPXNlY3QuAA8Je_8Oj34QyUZGTAxDV83dJMyp-R3mPLYe87UDsrhY9DFFMQ0Trk_xY_8ztfWRfACanxMc7apQiAm-M7HclKgAophSnjyniUXvl6VD1zCN0dRWZI9D_HRqxaeVqWsHoj63QJ1BFuu9A_AE8=w2788-h1560" width="30%" height="30%">
 </div>
 
 
-### 2.Mode selection
+### 2.Mode selection ###
 
 <div align=center>
 <img src="https://lh3.googleusercontent.com/560vxPg9NLArCER1TUt9_SPOD50HPQR4Q0pzoV5_nyoM9-KtrpDiJSeegPrZBfZQ9aaRlcwoXqaer-wZfNjx4KoOCFMeuWwaXvwXlN3LrjEBCl22rte56Hc8Esp06V-IeArGdCQTU9xDWFU2oUyYX6N2MbUD_fb0qRjK1r-yMFoyfbCFp-j05mq5wD57psFo255SXeiqgpI0ZnNYwi3hH959CjOvOzne0_kBD0wx1xcWjg5pGyRiO0HX8g-vNtN_PcOp-QQDqsmgOkpXxGfOWYW6xykYdmv_vrBB_DleeN8WLH9pTV56cng0QZnOg4q3qkr5GUnO6H19scXCwvtyt61v32qjvg5yy-VBCVYg2fPDk2Ubmw3kwrcuI53aww_vZMQw4v3PmGkVarQtDET35EWodE1SS10n6V4MudvmwbSGH1I10R1xZYbfmmxisIiMxjfTN970unvlzrZv5PpGe_tzktwVekn5ov8BxnOMh_7XrUtsWLDPY-KwphHs-zLx3QTXpX1GjvffAJAh1nstWX6r3x3m3IlMKBKecovmfhoJd1_twxn0H14HObswLRxm=w2788-h1560" width="30%" height="30%">
