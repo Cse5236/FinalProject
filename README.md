@@ -4,7 +4,7 @@ The phone screen is too small for several people to watch videos on a single mob
 
 ## Modules
 ### 1.User login or Facebook login Connection
-![image](https://drive.google.com/open?id=1I72QVFbYvpAcwWb-v7XmsM994gOJeNIA)
+![image](https://drive.google.com/file/d/1I72QVFbYvpAcwWb-v7XmsM994gOJeNIA/view?usp=sharing)
 ### 2.Mode selection
   * Remote mode(webview).
   * Local mode(videoview).
