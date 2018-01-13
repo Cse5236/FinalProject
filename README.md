@@ -12,9 +12,9 @@ The phone screen is too small for several people to watch videos on a single mob
 ### 2.Mode selection ###
 
 
-| left | Remote mode(webview) | right |
+| left | Remote mode(webview) | Local mode(videoview) |
 | :--- | :----: | ----: |
-| aaaa |<img src="https://lh3.googleusercontent.com/560vxPg9NLArCER1TUt9_SPOD50HPQR4Q0pzoV5_nyoM9-KtrpDiJSeegPrZBfZQ9aaRlcwoXqaer-wZfNjx4KoOCFMeuWwaXvwXlN3LrjEBCl22rte56Hc8Esp06V-IeArGdCQTU9xDWFU2oUyYX6N2MbUD_fb0qRjK1r-yMFoyfbCFp-j05mq5wD57psFo255SXeiqgpI0ZnNYwi3hH959CjOvOzne0_kBD0wx1xcWjg5pGyRiO0HX8g-vNtN_PcOp-QQDqsmgOkpXxGfOWYW6xykYdmv_vrBB_DleeN8WLH9pTV56cng0QZnOg4q3qkr5GUnO6H19scXCwvtyt61v32qjvg5yy-VBCVYg2fPDk2Ubmw3kwrcuI53aww_vZMQw4v3PmGkVarQtDET35EWodE1SS10n6V4MudvmwbSGH1I10R1xZYbfmmxisIiMxjfTN970unvlzrZv5PpGe_tzktwVekn5ov8BxnOMh_7XrUtsWLDPY-KwphHs-zLx3QTXpX1GjvffAJAh1nstWX6r3x3m3IlMKBKecovmfhoJd1_twxn0H14HObswLRxm=w2788-h1560" width="30%" height="30%">| ccccc |
+| aaaa |<img src="https://lh3.googleusercontent.com/560vxPg9NLArCER1TUt9_SPOD50HPQR4Q0pzoV5_nyoM9-KtrpDiJSeegPrZBfZQ9aaRlcwoXqaer-wZfNjx4KoOCFMeuWwaXvwXlN3LrjEBCl22rte56Hc8Esp06V-IeArGdCQTU9xDWFU2oUyYX6N2MbUD_fb0qRjK1r-yMFoyfbCFp-j05mq5wD57psFo255SXeiqgpI0ZnNYwi3hH959CjOvOzne0_kBD0wx1xcWjg5pGyRiO0HX8g-vNtN_PcOp-QQDqsmgOkpXxGfOWYW6xykYdmv_vrBB_DleeN8WLH9pTV56cng0QZnOg4q3qkr5GUnO6H19scXCwvtyt61v32qjvg5yy-VBCVYg2fPDk2Ubmw3kwrcuI53aww_vZMQw4v3PmGkVarQtDET35EWodE1SS10n6V4MudvmwbSGH1I10R1xZYbfmmxisIiMxjfTN970unvlzrZv5PpGe_tzktwVekn5ov8BxnOMh_7XrUtsWLDPY-KwphHs-zLx3QTXpX1GjvffAJAh1nstWX6r3x3m3IlMKBKecovmfhoJd1_twxn0H14HObswLRxm=w2788-h1560" width="30%" height="30%">|<img src="https://lh3.googleusercontent.com/aKMGKvlAVtXtCFHXQMt7mvzMd6Z3VuJvTIdH106Xti1d4-4xniFJy5XvEWnYTevlZxQZ5S93IySHOEd6qceh4Qg9smnT7w4vucnl-31ilqBtrJMhRqpH2g9zCDFNBCd9oUjksjTcL2ISaXiiv-6-7dE-lgdbenUsPKo4Q_R6rEIQ2gX2adGBImzy3dEoloEcBT_LOzvoP-8GUb2pFwR_wE1R6BTFpR2RiXp5konjsQtqbEJJttD3xgkerqzCqa8fgd1f0NfRvLmrHttObcMJ5cPgU47PPP6Pmn8ipD9TPSCg6wjPyFHaNGFkXIg59zSC2lQ-HI5Y0-x23XNpiArsb7NeNR8-XX9S9AW1Cb6AHc6OWyuanQPHocuB-G6ODrCt5DmnVfftVCuIAqHoYZGiTQIOLEfU0mYm-6LXmKJ0RZ8Dia-q5Wu25eindZkT0c-odj8F2vNs2jL9fhxYP12wdeKhteJ8YLM3G4FKsUuKj-4_zLYTiGLqGt-XEg0kiXCnxaKkn1Q76Fy9O1KAgZ3dQX2vK6HARBBltZirZ-WKBeiUE7oeLOo2tiYbgtcJx7da=w1972-h1560" width="30%" height="30%"> |
 | a    | b      | c     |
 
 
@@ -25,11 +25,11 @@ The phone screen is too small for several people to watch videos on a single mob
 </div>
 
 <div align = center>
-<img src="https://lh3.googleusercontent.com/aKMGKvlAVtXtCFHXQMt7mvzMd6Z3VuJvTIdH106Xti1d4-4xniFJy5XvEWnYTevlZxQZ5S93IySHOEd6qceh4Qg9smnT7w4vucnl-31ilqBtrJMhRqpH2g9zCDFNBCd9oUjksjTcL2ISaXiiv-6-7dE-lgdbenUsPKo4Q_R6rEIQ2gX2adGBImzy3dEoloEcBT_LOzvoP-8GUb2pFwR_wE1R6BTFpR2RiXp5konjsQtqbEJJttD3xgkerqzCqa8fgd1f0NfRvLmrHttObcMJ5cPgU47PPP6Pmn8ipD9TPSCg6wjPyFHaNGFkXIg59zSC2lQ-HI5Y0-x23XNpiArsb7NeNR8-XX9S9AW1Cb6AHc6OWyuanQPHocuB-G6ODrCt5DmnVfftVCuIAqHoYZGiTQIOLEfU0mYm-6LXmKJ0RZ8Dia-q5Wu25eindZkT0c-odj8F2vNs2jL9fhxYP12wdeKhteJ8YLM3G4FKsUuKj-4_zLYTiGLqGt-XEg0kiXCnxaKkn1Q76Fy9O1KAgZ3dQX2vK6HARBBltZirZ-WKBeiUE7oeLOo2tiYbgtcJx7da=w1972-h1560" width="30%" height="30%">
+
 </div>
 
 <div align=center>
-  Local mode(videoview).
+  .
 </div>
   
 <div align = center>
