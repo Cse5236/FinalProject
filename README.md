@@ -1,8 +1,11 @@
 # Bump2Share
+> Developing a mobile application on the Android
 ```
-<p>code here</p>
+<p>
+Introduce:
+The phone screen is too small for several people to watch videos on a single mobile phone. This app enables the users to split an online or local video into several parts and display them simutaneously on several mobile phones.</p>
 ```
-The phone screen is too small for several people to watch videos on a single mobile phone. This app enables the users to split an online or local video into several parts and display them simutaneously on several mobile phones.
+
 
 ## Modules ## 
 ### 1.User login or Facebook login Connection ###
