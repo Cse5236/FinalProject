@@ -5,8 +5,7 @@
 The phone screen is too small for several people to watch videos on a single mobile phone. This app enables the users to split an online or local video into several parts and display them simutaneously on several mobile phones.
 
 ```
-<p>
-</p>
+
 ```
 
 
@@ -42,8 +41,3 @@ The phone screen is too small for several people to watch videos on a single mob
 Our app is resilient to network connection failure. When the network fails, it will pop up a notification suggesting the user
 adjusting WIFI connection. User can choose whether to reconnect the WIFI or choose cancel.
 
-```js
-window.addEventListener('load', function() {
-  console.log('window loaded');
-});
-```
