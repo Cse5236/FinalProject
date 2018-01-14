@@ -3,9 +3,9 @@
 
 ## Introduce ## 
 The phone screen is too small for several people to watch videos on a single mobile phone. This app enables the users to split an online or local video into several parts and display them simutaneously on several mobile phones.
-
-
-
+<div align = center>
+<img src="https://lh5.googleusercontent.com/fOBf60TiqJFnL8W-mg22_EPScRi1jci-psOkZdd9W8-Vr1bQKftglLljk7WfQ1n35hBSIG1Wl2r-uAtwGNNm=w1972-h1528-rw" width="60%" height="30%">
+</div>  
 
 ## Modules ## 
 ### 1.User Email Sign in or Facebook Login Connection ###
@@ -36,9 +36,7 @@ The phone screen is too small for several people to watch videos on a single mob
   * Store users' mobile information.
 
 ## Resilient to failures
-<div align = center>
-<img src="https://lh5.googleusercontent.com/fOBf60TiqJFnL8W-mg22_EPScRi1jci-psOkZdd9W8-Vr1bQKftglLljk7WfQ1n35hBSIG1Wl2r-uAtwGNNm=w1972-h1528-rw" width="60%" height="30%">
-</div>  
+
 Our app is resilient to network connection failure. When the network fails, it will pop up a notification suggesting the user
 adjusting WIFI connection. User can choose whether to reconnect the WIFI or choose cancel.
 
