@@ -4,7 +4,7 @@
 ## Introduce ## 
 The phone screen is too small for several people to watch videos on a single mobile phone. This app enables the users to split an online or local video into several parts and display them simutaneously on several mobile phones.
 <div align = center>
-<img src="https://lh5.googleusercontent.com/fOBf60TiqJFnL8W-mg22_EPScRi1jci-psOkZdd9W8-Vr1bQKftglLljk7WfQ1n35hBSIG1Wl2r-uAtwGNNm=w1972-h1528-rw" width="60%" height="30%">
+<img src="https://lh3.googleusercontent.com/EZBAulDsvM1iJUKmk5dypbm1FKEg-qQh443j1MVREkui1oo6Qi3GU-qjGnI_z8c2grDoJQQb8lVzYxhnWng8hVW_aIMJ8cHtOzr7Fy7YD8_VotMhUjqxnXVRK5r-lE_8gVwd4Tss6_QoDxailNpM_9oOjrV5AQSGgcvE0psRXBOrxLFCVC5QKLejGfFhSEML30lPWqEfI8FX0Xy3C2aCq3TlWHeKh_D2QNjl7XHSB_Oi4s56G3ipoTSmnm4Bffw1cMVxOVNuGgMfuPexRhrmWQrfWFSelNsop5zzFmsAFt6Ht7pMenGgj8Mtyd-fdy1tJoLerAYRtKXuNilEZVODsCHu9ZdYkuCb_Sa_ojR4IT6m8tyLjYlpfRMjilirc_04Gs8Mw68-gDP0M9JtlXv6zV171e31YbxqTFEzgGnHx_VKqjg1tOaP5K8SxFGJYD9AWxcCHinwPrW4_gkNzAz_iStKIyItewe2d1lb05SNqVm7MWmQjEOLhwuK4T9bHl088ILF8J_hjFlsK4dEposkt9igi1kIZitAp0Am0VXkRaMP1qK0I_nhF3DboiTeRJUw=w2790-h1558" width="60%" height="30%">
 </div>  
 
 ## Modules ## 
